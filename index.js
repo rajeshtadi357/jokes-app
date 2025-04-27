@@ -6,7 +6,7 @@ const app=  express()
 
 
 app.use(cors({
-    origin: 'https://jokes-app-frontend1.vercel.app/' // Replace with your frontend URL
+    origin: 'https://jokes-app-frontend1.vercel.app' // Replace with your frontend URL
 }));
 
 app.get('/', (req,res)=>{
