@@ -5,7 +5,9 @@ const jokes=require("./data.js")
 const app=  express()
 
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://vercel.com/rajesh-tadis-projects/jokes-app-frontend1' // Replace with your frontend URL
+}));
 
 app.get('/', (req,res)=>{
     res.json({msg:"hello there , this is backend of jokes app"})
